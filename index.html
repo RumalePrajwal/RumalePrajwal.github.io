@@ -78,6 +78,12 @@
   background-color: #ccc;
   animation: typing-cursor 0.5s ease-in-out infinite;
 }
+	/* Hero profile image fix */
+.hero-profile-img {
+  background-repeat: no-repeat !important;
+  background-size: auto 86% !important;
+  background-position: right 60px bottom 0 !important;
+}
 
 @keyframes typing {
   from {
@@ -171,7 +177,7 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/portfolio.png); background-position: 200px 120px; background-size: 90% 80%;">
+	          	<div class="one-third js-fullheight order-md-last img hero-profile-img" style="background-image:url(images/portfolio.png);">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
