@@ -110,6 +110,36 @@
 }
 
 
+/* Automatic 3-column project layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 30px;
+  row-gap: 55px;
+}
+
+.projects-grid .project-card,
+.projects-grid .blog-entry {
+  width: 100%;
+}
+
+.projects-grid .block-20 {
+  width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575.98px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 </style>
 
 
@@ -382,94 +412,85 @@ Model Evaluation & Tuning, Statistical Analysis, Data Cleaning</span></li>
             <p>Below are some of my AI and Data Science Analytics projects on SQL, Python, PowerBI & Excel.</p>
           </div>
         </div>
-	<div class="row d-flex">
 
-		<div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/RumalePrajwal/iit-policy-chatbot" class="block-20 zoom-effect" style="background-image: url('images/Chatbot.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/RumalePrajwal/iit-policy-chatbot">University Policy Chatbot</a></h3>
-                <p>Led a team to build an LLM-powered university policy chatbot using RAG, Azure OpenAI, FastAPI, and Elasticsearch to deliver citation-backed answers for international student policy queries.</p>
-              </div>
-            </div>
-          </div>
-	
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/RumalePrajwal/PortfolioProjects/tree/main/motogp_AI_strategist" class="block-20 zoom-effect" style="background-image: url('images/MotoGP.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/RumalePrajwal/PortfolioProjects/tree/main/motogp_AI_strategist">MOTOGP AI STRATEGIST</a></h3>
-                <p>Built an interactive LLM-powered MotoGP strategy dashboard using simulated multi-session race data, enabling analytics and natural language race insights.</p>
-              </div>
-            </div>
-          </div>
-		
-          
-
-		<div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
+        <div class="projects-grid">
+          <div class="project-card ftco-animate">
+            <div class="blog-entry justify-content-end">
               <a href="https://github.com/RumalePrajwal/PortfolioProjects/tree/main/ClinicalNoteRefiner" class="block-20 zoom-effect" style="background-image: url('images/NLP.png');">
               </a>
               <div class="text mt-3 float-right d-block">
-
                 <h3 class="heading"><a href="https://github.com/RumalePrajwal/PortfolioProjects/tree/main/ClinicalNoteRefiner">CLINICAL NOTE REFINER</a></h3>
                 <p>Developed a hybrid NLP tool using spaCy and fuzzy matching to refine abbreviation-heavy clinical notes for diagnostic clarity.</p>
               </div>
             </div>
           </div>
-		
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
+
+          <div class="project-card ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/RumalePrajwal/PortfolioProjects/tree/main/motogp_AI_strategist" class="block-20 zoom-effect" style="background-image: url('images/MotoGP.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/RumalePrajwal/PortfolioProjects/tree/main/motogp_AI_strategist">MOTOGP AI STRATEGIST</a></h3>
+                <p>Built an interactive LLM-powered MotoGP strategy dashboard using simulated multi-session race data, enabling analytics and natural language race insights.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/RumalePrajwal/iit-policy-chatbot" class="block-20 zoom-effect" style="background-image: url('images/Chatbot.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/RumalePrajwal/iit-policy-chatbot">University Policy Chatbot</a></h3>
+                <p>Led a team to build an LLM-powered university policy chatbot using RAG, Azure OpenAI, FastAPI, and Elasticsearch to deliver citation-backed answers for international student policy queries.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card ftco-animate">
+            <div class="blog-entry justify-content-end">
               <a href="https://github.com/RumalePrajwal/PortfolioProjects/blob/main/COVID%20Portfolio%20Project.sql" class="block-20 zoom-effect" style="background-image: url('images/covid.webp');">
               </a>
               <div class="text mt-3 float-right d-block">
-
                 <h3 class="heading"><a href="https://github.com/RumalePrajwal/PortfolioProjects/blob/main/COVID%20Portfolio%20Project.sql">COVID 19 DATA EXPLORATION</a></h3>
                 <p>Used SQL Server to explore global COVID 19 data.</p>
               </div>
             </div>
           </div>
-		
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
+
+          <div class="project-card ftco-animate">
+            <div class="blog-entry justify-content-end">
               <a href="https://github.com/RumalePrajwal/PortfolioProjects/blob/main/Movie%20Portfolio%20Project.ipynb" class="block-20 zoom-effect" style="background-image: url('images/movie.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
-
                 <h3 class="heading"><a href="https://github.com/RumalePrajwal/PortfolioProjects/blob/main/Movie%20Portfolio%20Project.ipynb">MOVIE CORRELATION</a></h3>
                 <p>Looked at variables effecting the gross revenue from movies using Python.</p>
               </div>
             </div>
           </div>
-	  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://public.tableau.com/app/profile/rumale.prajwal6815/viz/CovidDashboard_17190598284940/Dashboard1" class="block-20 zoom-effect" style="background-image: url('images/Tableau.png');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://public.tableau.com/app/profile/rumale.prajwal6815/viz/CovidDashboard_17190598284940/Dashboard1">TABLEAU DASHBOARDS</a></h3>
-				  <p>Tableau Dashboard for the project COVID 19.</p>
-				</div>
-			  </div>
-			</div>
-		  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/RumalePrajwal/PortfolioProjects/blob/main/Coffee_Sales_Project.xlsx" class="block-20 zoom-effect" style="background-image: url('images/coffee.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/RumalePrajwal/PortfolioProjects/blob/main/Coffee_Sales_Project.xlsx">COFFEE SALES DASHBOARD (EXCEL)</a></h3>
-				  <p>Used Pivot tables, Piovt charts, XLOOKUP to analyse and gain insights on Coffee sales data.</p>
-				</div>
-			  </div>
-	  </div>
-		</div>
+
+          <div class="project-card ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://public.tableau.com/app/profile/rumale.prajwal6815/viz/CovidDashboard_17190598284940/Dashboard1" class="block-20 zoom-effect" style="background-image: url('images/Tableau.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://public.tableau.com/app/profile/rumale.prajwal6815/viz/CovidDashboard_17190598284940/Dashboard1">TABLEAU DASHBOARDS</a></h3>
+                <p>Tableau Dashboard for the project COVID 19.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/RumalePrajwal/PortfolioProjects/blob/main/Coffee_Sales_Project.xlsx" class="block-20 zoom-effect" style="background-image: url('images/coffee.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/RumalePrajwal/PortfolioProjects/blob/main/Coffee_Sales_Project.xlsx">COFFEE SALES DASHBOARD (EXCEL)</a></h3>
+                <p>Used Pivot tables, Pivot charts, and XLOOKUP to analyze and gain insights from coffee sales data.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
